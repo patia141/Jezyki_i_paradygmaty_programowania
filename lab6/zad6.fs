@@ -3,7 +3,8 @@
 let replaceWord (text: string) (searchWord: string) (replacement: string) =
     text.Replace(searchWord, replacement)
 
-let main () =
+[<Entry Point>]
+let main argv =
     printfn "Podaj tekst:"
     let originalText = Console.ReadLine()
 
@@ -23,4 +24,4 @@ let main () =
             printfn "\nZmieniony tekst:"
             printfn "%s" modifiedText
 
-main ()
+    0
